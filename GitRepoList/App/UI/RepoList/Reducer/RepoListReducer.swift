@@ -9,8 +9,8 @@
 import Foundation
 
 struct RepoListReducer {
-    func reduceRepositories(
-        result: RepoListSearchResult,
+    func reduceSearchResult(
+        _ result: RepoListSearchResult,
         rows: inout [RepoListRow],
         repositoriesById: inout [Int: Repository],
         ownersById: inout [Int: Owner]
