@@ -22,6 +22,6 @@ class Store: ObservableObject {
     }
     
     init() {
-        loggedIn = UserDefaults.standard.bool(forKey: Store.loggedInKey)
+        loggedIn = UserDefaultsManager.bool(forKey: Store.loggedInKey)
     }
 }
