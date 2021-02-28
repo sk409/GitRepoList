@@ -10,10 +10,10 @@ xcodeproj_path: GitRepoList.xcodeproj
 project_target: GitRepoList
 
 # The file path for new modules
-project_file_path: GitRepoList/App
+project_file_path: GitRepoList/App/UI
 
 # The Xcode group path to new modules
-project_group_path: GitRepoList/App
+project_group_path: GitRepoList/App/UI
 
 ### Dependencies settings section
 podfile_path: Podfile

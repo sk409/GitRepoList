@@ -13,8 +13,9 @@ struct GitRepoListApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(Store())
         }
     }
 }

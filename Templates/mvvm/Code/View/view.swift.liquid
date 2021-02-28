@@ -9,10 +9,15 @@
 import SwiftUI
 
 struct {{ module_info.name }}View: View {
+    @EnvironmentObject var store: Store
+
     @ObservedObject var {{ module_info.name | slice: 0 | downcase }}{{ module_info.name | slice: 1, module_info.name.size - 1 }}ViewModel = {{ module_info.name }}ViewModel()
 
     var body: some View {
         NavigationView {
+        }
+        .onAppear {
+            {{ module_info.name | slice: 0 | downcase }}{{ module_info.name | slice: 1, module_info.name.size - 1 }}ViewModel.store = store
         }
     }
 }

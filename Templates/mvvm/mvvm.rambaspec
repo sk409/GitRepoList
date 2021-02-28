@@ -7,8 +7,8 @@ license: MIT
 
 # The declarations for code files
 code_files:
+- {name: Reducer/Reducer.swift, path: Code/Reducer/reducer.swift.liquid}
 - {name: Repository/Repository.swift, path: Code/Repository/repository.swift.liquid}
-- {name: Representer/Representer.swift, path: Code/Representer/representer.swift.liquid}
 - {name: View/View.swift, path: Code/View/view.swift.liquid}
 - {name: ViewModel/ViewModel.swift, path: Code/ViewModel/viewModel.swift.liquid}
 

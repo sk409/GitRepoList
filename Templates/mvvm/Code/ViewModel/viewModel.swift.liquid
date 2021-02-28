@@ -10,8 +10,10 @@ import Combine
 import Foundation
 
 class {{ module_info.name }}ViewModel: ObservableObject, Identifiable {
-    @Published var {{ module_info.name | slice: 0 | downcase }}{{ module_info.name | slice: 1, module_info.name.size - 1 }}Representer = {{ module_info.name }}Representer()
+    var store: Store!
 
+    private var {{ module_info.name | slice: 0 | downcase }}{{ module_info.name | slice: 1, module_info.name.size - 1 }}Reducer = {{ module_info.name }}Reducer()
     private var {{ module_info.name | slice: 0 | downcase }}{{ module_info.name | slice: 1, module_info.name.size - 1 }}Repository = {{ module_info.name }}Repository()
-    private var disposables = Set<AnyCancellable>()
+
+    private var cancellables = Set<AnyCancellable>()
 }
