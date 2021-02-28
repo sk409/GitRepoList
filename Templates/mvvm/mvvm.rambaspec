@@ -1,0 +1,16 @@
+# Template information section
+name: mvvm
+summary: MVVM architecture template.
+author: s.kobayashi
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: Repository/Repository.swift, path: Code/Repository/repository.swift.liquid}
+- {name: Representer/Representer.swift, path: Code/Representer/representer.swift.liquid}
+- {name: View/View.swift, path: Code/View/view.swift.liquid}
+- {name: ViewModel/ViewModel.swift, path: Code/ViewModel/viewModel.swift.liquid}
+
+# Template dependencies
+dependencies:
